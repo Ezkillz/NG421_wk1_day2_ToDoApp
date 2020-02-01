@@ -19,6 +19,7 @@ export class AppComponent {
   this.todoList = [
     {title:'Todo', isDone:false}
   ];
+  console.log(this.todoList);
 }
 
 addTodo():void{
