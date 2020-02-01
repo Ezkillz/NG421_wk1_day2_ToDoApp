@@ -21,6 +21,15 @@ export class AppComponent {
   ];
 }
 
+addTodo():void{
+  this.todoList.push({
+    title: this.todoTitle,
+    isDone: false
+  });
+ // idk why we set this to an empty string yet
+  this.todoTitle = ' ';
+}
+
 deleteTodo(todo:any) {
   const index = this.todoList.findIndex(todoItem => todoItem === todo);
   this.todoList.splice(index,1);
