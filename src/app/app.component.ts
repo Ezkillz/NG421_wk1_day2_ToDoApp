@@ -11,10 +11,11 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent {
   title = 'Todos';
-  todoList: any[];
+  todoList: any[] = [];
+  todoTitle: string;
 
   ngOnInit() {
-  // guessing I dont hav angular cli installed
+  this.todoTitle = ' ';
   this.todoList = [
     {title:'Todo', isDone:false}
   ];
